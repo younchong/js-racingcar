@@ -1,4 +1,4 @@
-.btn {
+button {
   height: 36px;
   min-width: 64px;
   padding: 0 16px;
@@ -8,11 +8,11 @@
   cursor: pointer;
 }
 
-.btn-cyan {
+button {
   background-color: #00bcd4 !important;
   border-color: #00bcd4 !important;
 }
 
-.btn.btn-cyan:hover {
+button:hover {
   background-color: #018c9e !important;
 }
