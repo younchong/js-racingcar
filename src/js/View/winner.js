@@ -8,7 +8,13 @@ export default function tellWinner(carList, scoreBoard) {
       winner.push(carList[i].name);
     }
   });
-  WINNER_DIV.innerText = `🏆 최종 우승자: ${winner.join(", ")} 🏆`
+  
+  setTimeout(() => {
+    WINNER_DIV.innerText = `🏆 최종 우승자: ${winner.join(", ")} 🏆`
+    setTimeout(() => {
+      alert(`🎉 ${winner.join(", ")}님 축하합니다🎉`);
+    }, 2000);
+  }, 1000)
 
   document.body.append(WINNER_DIV);
 }

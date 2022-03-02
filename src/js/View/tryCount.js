@@ -14,10 +14,14 @@ export default function makeTryCounterInput(carList, count) {
   COUNTER_DIV.append(COUNTER_EX);
   COUNTER_DIV.append(COUNTER_INPUT);
   COUNTER_DIV.append(COUNTER_BTN);
+  let isClicked = false;
   
   COUNTER_BTN.addEventListener("click", () => {
-    count = COUNTER_INPUT.value;
-    makePlayers(carList, count);
+    if (!isClicked) {
+      isClicked = true;
+      count = COUNTER_INPUT.value;
+      makePlayers(carList, count);
+    }
   })
 
   document.body.append(COUNTER_DIV);

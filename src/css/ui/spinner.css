@@ -8,8 +8,6 @@
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  left: 0;
-  top: 0;
   position: absolute;
   border-radius: 50%;
 }
